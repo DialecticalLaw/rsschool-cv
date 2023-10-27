@@ -4,9 +4,9 @@
 
 ## Contacts
 
-* Email: d.shmuratkin@mail.ru
-* GitHub: DialecticalLaw
-* Discord: proxyMC
+* **Email**: d.shmuratkin@mail.ru
+* **GitHub**: DialecticalLaw
+* **Discord**: proxyMC
 
 ## Summary
 
