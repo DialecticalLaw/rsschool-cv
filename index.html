@@ -29,7 +29,7 @@
         </header>
         <main class="main">
             <section class="section-about">
-                <div class="contacts">
+                <div class="contacts subsection">
                     <h2 class="title-of-section" id="contacts">Contacts</h2>
                     <ul class="main-list">
                         <li class="main-item"><img src="assets/img/email.svg" alt="email" class="main-icon"><span class="contacts-text">Email: <span class="main-text">d.shmuratkin@mail.ru</span></span></li>
@@ -37,13 +37,13 @@
                         <li class="main-item"><img src="assets/img/discord.svg" alt="Discord" class="main-icon"><span class="contacts-text">Discord: <span class="main-text">proxyMC</span></span></li>
                     </ul>
                 </div>
-                <div class="summary">
+                <div class="summary subsection">
                     <h2 class="title-of-section" id="summary">Summary</h2>
                     <p class="main-text">I started my way in programming only 4 months ago at the time of writing this text. During this time, I have mastered basic knowledge of HTML, CSS and JavaScript and a bit of Git/GitHub. <br> My goal is trivial and converges with the goal of most - it's to get a job in a promising company. If we talk about what distinguishes me from the majority, it's that I see my future without programming quite sad, so I will cling to any opportunity to get closer to my goal.</p>
                 </div>
             </section>
             <section class="section-professional">
-                <div class="skills">
+                <div class="skills subsection">
                     <h2 class="title-of-section" id="skills">Skills</h2>
                     <ul class="main-list">
                         <li class="main-item"><img src="assets/img/git.svg" alt="git" class="main-icon"><span class="skills-text">Git <span class="main-text">basics</span></span></li>
@@ -52,14 +52,14 @@
                         <li class="main-item"><img src="assets/img/js.svg" alt="js" class="main-icon"><span class="skills-text">JavaScript <span class="main-text">basics</span></span></li>
                     </ul>
                 </div>
-                <div class="education">
+                <div class="education subsection">
                     <h2 class="title-of-section" id="education">Education</h2>
                     <ul class="education-list">
                         <li class="main-item"><span class="main-text">Syktyvkar Trade and Economic College</span></li>
                         <li class="main-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
                     </ul>
                 </div>
-                <div class="languages">
+                <div class="languages subsection">
                     <h2 class="title-of-section" id="languages">Languages</h2>
                     <ul class="languages-list">
                         <li class="main-item"><span class="main-text">English - A1 (A2 in progress)</span></li>
@@ -67,11 +67,65 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-projects"></section>
-            <section class="section-code"></section>
+            <section class="section-projects">
+                <h2 class="title-of-section" id="projects">Projects</h2>
+                <div class="projects-block-list">
+                    <a href="https://dialecticallaw.github.io/first-training-projects/library/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-library">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Web page for the library</div>
+                            </div>
+                        </div>
+                        <p class="main-text">Library</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/random-game/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-2048">
+                            <div class="project-description-block">
+                                <div class="project-description-text">2048 - numerical puzzle, combine tiles, reach 2048</div>
+                            </div>
+                        </div>
+                        <p class="main-text">2048</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/audio-player/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-audio-player">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Simple audio player. Relax while listening to music</div>
+                            </div>
+                        </div>
+                        <p class="main-text">Audio player</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/image-galery/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-image-gallery">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Get the images you need by search query</div>
+                            </div>
+                        </div>
+                        <p class="main-text">Image gallery</p>
+                    </a>
+                </div>
+            </section>
+            <section class="section-code">
+                <h2 class="title-of-section" id="code">Code</h2>
+                <code class="code-example">
+                    function bingo(ticket, win) {<br>
+                    &emsp;let miniWins = 0;<br>
+                    &emsp;for (let subTicket of ticket) {<br>
+                    &emsp;&emsp;for (let i = 0; i &lt; subTicket[0].length; i++) {<br>
+                    &emsp;&emsp;&emsp;if (subTicket[0].charCodeAt(i) === subTicket[1]) {<br>
+                    &emsp;&emsp;&emsp;&emsp;miniWins += 1;<br>
+                    &emsp;&emsp;&emsp;&emsp;break;<br>
+                    &emsp;&emsp;&emsp;}<br>
+                    &emsp;&emsp;}<br>
+                    &emsp;}<br>
+                    &emsp;return miniWins &gt;= win? 'Winner!' : 'Loser!'<br>
+                    }
+                </code>
+            </section>
         </main>
         <footer class="footer">
-
+            <a href="https://github.com/DialecticalLaw" class="gh-name" target="_blank"><img src="assets/img/github.svg" alt="github" class="gh-icon">DialecticalLaw</a>
+            <p class="year">2023</p>
+            <a href="https://rs.school/js-stage0/" class="rss-link" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rss"></a>
         </footer>
     </div>
 </body>
