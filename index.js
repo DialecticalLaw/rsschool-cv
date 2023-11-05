@@ -70,26 +70,25 @@ function showDepartingElements() {
     }
 }
 
+// animation when navigating \/
+
+const navContacts = document.querySelector('[href="#contacts"]');
+const navSummary = document.querySelector('[href="#summary"]');
+const navSkills = document.querySelector('[href="#skills"]');
+const navEducation = document.querySelector('[href="#education"]');
+const navLanguages = document.querySelector('[href="#languages"]');
+const navProjects = document.querySelector('[href="#projects"]');
+const navCode = document.querySelector('[href="#code"]');
 
 
-// const navContacts = document.querySelector('[href="#contacts"]');
-// const navSummary = document.querySelector('[href="#summary"]');
-// const navSkills = document.querySelector('[href="#skills"]');
-// const navEducation = document.querySelector('[href="#education"]');
-// const navLanguages = document.querySelector('[href="#languages"]');
-// const navProjects = document.querySelector('[href="#projects"]');
-// const navCode = document.querySelector('[href="#code"]');
+document.addEventListener('click', highlightSection);
 
-
-// document.addEventListener('click', highlightSection);
-
-// function highlightSection(event) {
-//     switch (event.target) {
-//         case value:
-            
-//             break;
-    
-//         default:
-//             break;
-//     }
-// }
+function highlightSection(event) {
+    const requiredElem = document.querySelector(`#${event.target.getAttribute('href').slice(1)}`);
+    requiredElem.style['background-color'] = '#44628E';
+    requiredElem.style.filter = 'drop-shadow(0px 0px 12px #44628E)';
+    requiredElem.style.color = '#ffffff';
+    setTimeout(() => {
+        requiredElem.removeAttribute('style');
+    }, 1500);
+}
