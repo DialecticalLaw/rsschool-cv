@@ -59,15 +59,16 @@
                     <div class="education subsection">
                         <h2 class="title-of-section" id="education">Education</h2>
                         <ul class="education-list">
-                            <li class="main-item"><span class="main-text">Syktyvkar Trade and Economic College</span></li>
-                            <li class="main-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">Syktyvkar Trade and Economic College</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
                         </ul>
+                        <a href="https://app.rs.school/certificate/qplzbdwl" class="certificate-link" target="_blank"><img src="assets/img/certificate.svg" alt="certificate" class="certificate-img"></a>
                     </div>
                     <div class="languages subsection">
                         <h2 class="title-of-section" id="languages">Languages</h2>
                         <ul class="languages-list">
-                            <li class="main-item"><span class="main-text">English - A1 (A2 in progress)</span></li>
-                            <li class="main-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">English - A1 (A2 in progress)</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
                         </ul>
                     </div>
                 </section>
@@ -81,7 +82,7 @@
                                 <div class="project-description-text">Web page for the library</div>
                             </div>
                         </div>
-                        <p class="main-text">Library</p>
+                        <p class="main-text">- Library -</p>
                     </a>
                     <a href="https://dialecticallaw.github.io/first-training-projects/random-game/" class="project-link-wrapper" target="_blank">
                         <div class="project-img img-2048">
@@ -89,7 +90,7 @@
                                 <div class="project-description-text">2048 - numerical puzzle, combine tiles, reach 2048</div>
                             </div>
                         </div>
-                        <p class="main-text">2048</p>
+                        <p class="main-text">- 2048 -</p>
                     </a>
                     <a href="https://dialecticallaw.github.io/first-training-projects/audio-player/" class="project-link-wrapper" target="_blank">
                         <div class="project-img img-audio-player">
@@ -97,7 +98,7 @@
                                 <div class="project-description-text">Simple audio player. Relax while listening to music</div>
                             </div>
                         </div>
-                        <p class="main-text">Audio player</p>
+                        <p class="main-text">- Audio player -</p>
                     </a>
                     <a href="https://dialecticallaw.github.io/first-training-projects/image-galery/" class="project-link-wrapper" target="_blank">
                         <div class="project-img img-image-gallery">
@@ -105,31 +106,35 @@
                                 <div class="project-description-text">Get the images you need by search query</div>
                             </div>
                         </div>
-                        <p class="main-text">Image gallery</p>
+                        <p class="main-text">- Image gallery -</p>
                     </a>
                 </div>
             </section>
             <section class="section-code">
                 <h2 class="title-of-section" id="code">Code</h2>
-                <code class="code-example">
-                    function bingo(ticket, win) {<br>
-                    &emsp;let miniWins = 0;<br>
-                    &emsp;for (let subTicket of ticket) {<br>
-                    &emsp;&emsp;for (let i = 0; i &lt; subTicket[0].length; i++) {<br>
-                    &emsp;&emsp;&emsp;if (subTicket[0].charCodeAt(i) === subTicket[1]) {<br>
-                    &emsp;&emsp;&emsp;&emsp;miniWins += 1;<br>
-                    &emsp;&emsp;&emsp;&emsp;break;<br>
-                    &emsp;&emsp;&emsp;}<br>
-                    &emsp;&emsp;}<br>
-                    &emsp;}<br>
-                    &emsp;return miniWins &gt;= win? 'Winner!' : 'Loser!'<br>
-                    }
-                </code>
-                <!-- <div class="rocket-gif"></div> -->
+                <div class="code-block">
+                    <code class="code-example">
+                        <img src="assets/img/vscode.svg" alt="vscode" class="vscode-img">
+                        <span class="code-blue">function</span> <span class="code-light-yellow">bingo</span><span class="code-yellow">(</span><span class="code-aqua">ticket</span>, <span class="code-aqua">win</span><span class="code-yellow">) {</span><br>
+                        &emsp;<span class="code-blue">let</span> <span class="code-aqua">miniWins</span> = <span class="code-green">0</span>;<br>
+                        &emsp;<span class="code-purple">for (</span><span class="code-blue">let</span> <span class="code-aqua">subTicket</span> <span class="code-blue">of</span> <span class="code-aqua">ticket</span><span class="code-purple">) {</span><br>
+                        &emsp;&emsp;<span class="code-purple">for</span> <span class="code-blue">(let</span> <span class="code-aqua">i</span> = <span class="code-green">0</span>; <span class="code-aqua">i</span> &lt; <span class="code-aqua">subTicket</span><span class="code-yellow">[</span><span class="code-green">0</span><span class="code-yellow">]</span>.<span class="code-aqua">length</span>; <span class="code-aqua">i</span>++<span class="code-blue">) {</span><br>
+                        &emsp;&emsp;&emsp;<span class="code-purple">if</span> <span class="code-yellow">(</span><span class="code-aqua">subTicket</span><span class="code-purple">[</span><span class="code-green">0</span><span class="code-purple">]</span>.<span class="code-light-yellow">charCodeAt</span><span class="code-purple">(</span><span class="code-aqua">i</span><span class="code-purple">)</span> === <span class="code-aqua">subTicket</span><span class="code-purple">[</span>1<span class="code-purple">]</span><span class="code-yellow">) {</span><br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="code-aqua">miniWins</span> += <span class="code-green">1</span>;<br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="code-purple">break</span>;<br>
+                        &emsp;&emsp;&emsp;<span class="code-yellow">}</span><br>
+                        &emsp;&emsp;<span class="code-blue">}</span><br>
+                        &emsp;<span class="code-purple">}</span><br>
+                        &emsp;<span class="code-purple">return</span> <span class="code-aqua">miniWins</span> &gt;= <span class="code-aqua">win</span>? <span class="code-brown">'Winner!'</span> : <span class="code-brown">'Loser!'</span><br>
+                        <span class="code-yellow">}</span>
+                    </code>
+                    <div class="rocket-gif"></div>
+                </div>
             </section>
         </main>
         <footer class="footer">
             <a href="https://github.com/DialecticalLaw" class="gh-name" target="_blank"><img src="assets/img/github.svg" alt="github" class="gh-icon">DialecticalLaw</a>
+            <img src="assets/img/leaves.png" alt="leaves" class="leaves-img">
             <p class="year">2023</p>
             <a href="https://rs.school/js-stage0/" class="rss-link" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rss"></a>
         </footer>
