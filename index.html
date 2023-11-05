@@ -112,23 +112,30 @@
             </section>
             <section class="section-code">
                 <h2 class="title-of-section" id="code">Code</h2>
-                <div class="code-block">
-                    <code class="code-example">
-                        <img src="assets/img/vscode.svg" alt="vscode" class="vscode-img">
-                        <span class="code-blue">function</span> <span class="code-light-yellow">bingo</span><span class="code-yellow">(</span><span class="code-aqua">ticket</span>, <span class="code-aqua">win</span><span class="code-yellow">) {</span><br>
-                        &emsp;<span class="code-blue">let</span> <span class="code-aqua">miniWins</span> = <span class="code-green">0</span>;<br>
-                        &emsp;<span class="code-purple">for (</span><span class="code-blue">let</span> <span class="code-aqua">subTicket</span> <span class="code-blue">of</span> <span class="code-aqua">ticket</span><span class="code-purple">) {</span><br>
-                        &emsp;&emsp;<span class="code-purple">for</span> <span class="code-blue">(let</span> <span class="code-aqua">i</span> = <span class="code-green">0</span>; <span class="code-aqua">i</span> &lt; <span class="code-aqua">subTicket</span><span class="code-yellow">[</span><span class="code-green">0</span><span class="code-yellow">]</span>.<span class="code-aqua">length</span>; <span class="code-aqua">i</span>++<span class="code-blue">) {</span><br>
-                        &emsp;&emsp;&emsp;<span class="code-purple">if</span> <span class="code-yellow">(</span><span class="code-aqua">subTicket</span><span class="code-purple">[</span><span class="code-green">0</span><span class="code-purple">]</span>.<span class="code-light-yellow">charCodeAt</span><span class="code-purple">(</span><span class="code-aqua">i</span><span class="code-purple">)</span> === <span class="code-aqua">subTicket</span><span class="code-purple">[</span>1<span class="code-purple">]</span><span class="code-yellow">) {</span><br>
-                        &emsp;&emsp;&emsp;&emsp;<span class="code-aqua">miniWins</span> += <span class="code-green">1</span>;<br>
-                        &emsp;&emsp;&emsp;&emsp;<span class="code-purple">break</span>;<br>
-                        &emsp;&emsp;&emsp;<span class="code-yellow">}</span><br>
-                        &emsp;&emsp;<span class="code-blue">}</span><br>
-                        &emsp;<span class="code-purple">}</span><br>
-                        &emsp;<span class="code-purple">return</span> <span class="code-aqua">miniWins</span> &gt;= <span class="code-aqua">win</span>? <span class="code-brown">'Winner!'</span> : <span class="code-brown">'Loser!'</span><br>
-                        <span class="code-yellow">}</span>
-                    </code>
-                    <div class="rocket-gif"></div>
+                <div class="kata-block">
+                    <div class="code-block">
+                        <code class="code-example">
+                            <img src="assets/img/vscode.svg" alt="vscode" class="vscode-img">
+                            <span class="code-blue">function</span> <span class="code-light-yellow">bingo</span><span class="code-yellow">(</span><span class="code-aqua">ticket</span>, <span class="code-aqua">win</span><span class="code-yellow">) {</span><br>
+                            &emsp;<span class="code-blue">let</span> <span class="code-aqua">miniWins</span> = <span class="code-green">0</span>;<br>
+                            &emsp;<span class="code-purple">for (</span><span class="code-blue">let</span> <span class="code-aqua">subTicket</span> <span class="code-blue">of</span> <span class="code-aqua">ticket</span><span class="code-purple">) {</span><br>
+                            &emsp;&emsp;<span class="code-purple">for</span> <span class="code-blue">(let</span> <span class="code-aqua">i</span> = <span class="code-green">0</span>; <span class="code-aqua">i</span> &lt; <span class="code-aqua">subTicket</span><span class="code-yellow">[</span><span class="code-green">0</span><span class="code-yellow">]</span>.<span class="code-aqua">length</span>; <span class="code-aqua">i</span>++<span class="code-blue">) {</span><br>
+                            &emsp;&emsp;&emsp;<span class="code-purple">if</span> <span class="code-yellow">(</span><span class="code-aqua">subTicket</span><span class="code-purple">[</span><span class="code-green">0</span><span class="code-purple">]</span>.<span class="code-light-yellow">charCodeAt</span><span class="code-purple">(</span><span class="code-aqua">i</span><span class="code-purple">)</span> === <span class="code-aqua">subTicket</span><span class="code-purple">[</span>1<span class="code-purple">]</span><span class="code-yellow">) {</span><br>
+                            &emsp;&emsp;&emsp;&emsp;<span class="code-aqua">miniWins</span> += <span class="code-green">1</span>;<br>
+                            &emsp;&emsp;&emsp;&emsp;<span class="code-purple">break</span>;<br>
+                            &emsp;&emsp;&emsp;<span class="code-yellow">}</span><br>
+                            &emsp;&emsp;<span class="code-blue">}</span><br>
+                            &emsp;<span class="code-purple">}</span><br>
+                            &emsp;<span class="code-purple">return</span> <span class="code-aqua">miniWins</span> &gt;= <span class="code-aqua">win</span>? <span class="code-brown">'Winner!'</span> : <span class="code-brown">'Loser!'</span>;<br>
+                            <span class="code-yellow">}</span>
+                        </code>
+                        <div class="falling-syntax"></div>
+                    </div>
+                    <div class="kata-description">
+                            <a href="https://www.codewars.com/kata/57f625992f4d53c24200070e" target="_blank" class="lottery-title">Lottery Ticket <img src="assets/img/link.svg" alt="link" class="link-kata-img"></a>
+                            <p class="main-text">Given a lottery ticket (ticket), represented by an array of 2-value arrays, you must find out if you've won the jackpot. To do this, you must first count the 'mini-wins' on your ticket. Each subarray has both a string and a number within it. If the character code of any of the characters in the string matches the number, you get a mini win. Note you can only have one mini win per sub array. Once you have counted all of your mini wins, compare that number to the other input provided (win). If your total is more than or equal to (win), return 'Winner!'. Else return 'Loser!'.</p>
+                            <img src="assets/img/spot2.png" alt="spot" class="spot2">
+                    </div>
                 </div>
             </section>
         </main>
@@ -139,5 +146,6 @@
             <a href="https://rs.school/js-stage0/" class="rss-link" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rss"></a>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
