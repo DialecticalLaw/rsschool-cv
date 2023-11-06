@@ -289,7 +289,8 @@ body {
     line-height: 40px;
 }
 
-.section-about, .section-professional {
+.section-about,
+.section-professional {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -356,7 +357,8 @@ body {
     height: 25px;
 }
 
-.contacts-text, .skills-text {
+.contacts-text,
+.skills-text {
     margin-left: 35px;
     font-family: Itim;
     font-weight: 700;
@@ -410,7 +412,8 @@ body {
     border-radius: 50px 0 0 0;
 }
 
-.section-projects, .section-code {
+.section-projects,
+.section-code {
     margin-top: 35px;
     width: 100%;
 }
@@ -776,6 +779,10 @@ body {
         font-size: 1.5rem;
     }
 
+    .nav-text {
+        font-size: 22px;
+    }
+
     .skills-content-wrapper {
         justify-content: flex-start;
     }
@@ -788,16 +795,14 @@ body {
         padding-left: 15px;
     }
 
-    .main-text, .contacts-text, .skills-text {
+    .main-text, 
+    .contacts-text,
+    .skills-text {
         font-size: 20px;
     }
 
     .title-of-section {
         font-size: 35px;
-    }
-
-    .nav-text {
-        font-size: 22px;
     }
 }
 
@@ -879,5 +884,188 @@ body {
         width: 35px;
         height: 35px;
         top: 0;
+    }
+}
+
+@media screen and (max-width: 1232px) {
+    .title-of-section {
+        font-size: 32px;
+    }
+
+    .project-link-wrapper {
+        width: 200px;
+        height: 250px;
+    }
+
+    .project-description-text,
+    .js-syntax {
+        font-size: 20px;
+    }
+
+    .lottery-title {
+        font-size: 28px;
+    }
+
+    .link-kata-img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .code-example {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .certificate-img,
+    .gh-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .spot {
+        width: 70px;
+        height: 70px;
+    }
+
+    .spot2 {
+        width: 80px;
+    }
+
+    .gh-name,
+    .year {
+        font-size: 1.4rem;
+    }
+
+    .footer-img {
+        width: 240px;
+    }
+
+    .rss-link {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 2.4rem;
+    }
+
+    .location-block {
+        font-size: 1.2rem;
+    }
+
+    .nav-text {
+        font-size: 20px;
+    }
+
+    .spot {
+        width: 60px;
+        height: 60px;
+    }
+
+    .colored-list-item {
+        font-size: 35px;
+    }
+
+    .main-text, 
+    .contacts-text,
+    .skills-text {
+        font-size: 17px;
+    }
+
+    .title-of-section {
+        font-size: 28px;
+    }
+
+    .code-block {
+        height: 450px;
+    }
+
+    .lottery-title {
+        font-size: 24px;
+    }
+
+    .code-example {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .js-img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header-burger-button {
+        width: 40px;
+        height: 24px;
+    }
+
+    .project-link-wrapper {
+        width: 150px;
+        height: 200px;
+    }
+
+    .project-link-wrapper p {
+        font-size: 14px;
+    }
+
+    .project-description-text {
+        font-size: 16px;
+    }
+
+    .title-of-section {
+        font-size: 24px;
+    }
+
+    .lottery-title {
+        font-size: 20px;
+    }
+
+    .js-syntax {
+        font-size: 17px;
+    }
+
+    .footer-img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .kata-description {
+        width: 41%;
+    }
+
+    .main-text, 
+    .contacts-text,
+    .skills-text {
+        font-size: 15px;
+    }
+
+    .certificate-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .spot2 {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .kata-block {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .kata-description {
+        width: 75%;
     }
 }

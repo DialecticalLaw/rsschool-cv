@@ -18,7 +18,7 @@ function showDepartingElements() { // animation in the code section
         fallingSyntax.insertAdjacentElement('afterbegin', newElem);
 
         setTimeout(() => {
-            newElem.style.transform = 'translateY(550%)';
+            newElem.style.transform = 'translateY(570%)';
             newElem.style.opacity = '0';
             setTimeout(() => {
                 newElem.remove();
@@ -32,7 +32,7 @@ function showDepartingElements() { // animation in the code section
         fallingSyntax.insertAdjacentElement('afterbegin', newElem);
 
         setTimeout(() => {
-            newElem.style.transform = 'translateY(550%)';
+            newElem.style.transform = 'translateY(570%)';
             newElem.style.opacity = '0';
             setTimeout(() => {
                 newElem.remove();
@@ -47,7 +47,7 @@ function showDepartingElements() { // animation in the code section
         fallingSyntax.insertAdjacentElement('afterbegin', newElem);
 
         setTimeout(() => {
-            newElem.style.transform = 'translateY(550%)';
+            newElem.style.transform = 'translateY(570%)';
             newElem.style.opacity = '0';
             setTimeout(() => {
                 newElem.remove();
@@ -61,7 +61,7 @@ function showDepartingElements() { // animation in the code section
         fallingSyntax.insertAdjacentElement('afterbegin', newElem);
 
         setTimeout(() => {
-            newElem.style.transform = 'translateY(550%)';
+            newElem.style.transform = 'translateY(570%)';
             newElem.style.opacity = '0';
             setTimeout(() => {
                 newElem.remove();
