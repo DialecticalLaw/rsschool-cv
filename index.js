@@ -85,10 +85,11 @@ document.addEventListener('click', highlightSection);
 
 function highlightSection(event) {
     const requiredElem = document.querySelector(`#${event.target.getAttribute('href').slice(1)}`);
-    requiredElem.style['background-color'] = '#44628E';
-    requiredElem.style.filter = 'drop-shadow(0px 0px 12px #44628E)';
-    requiredElem.style.color = '#ffffff';
+    requiredElem.style['background-color'] = '#47b466';
+    requiredElem.style.filter = 'drop-shadow(0px 0px 12px #47b466)';
+    requiredElem.style.color = '#000000';
+    requiredElem.style['text-shadow'] = 'none';
     setTimeout(() => {
         requiredElem.removeAttribute('style');
-    }, 1500);
+    }, 2000);
 }
