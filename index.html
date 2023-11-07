@@ -3,9 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>CV</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <div class="header-burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="avatar"></div>
+            <div class="name-block">
+                <h1 class="name">Denis Shmuratkin</h1>
+                <p class="location-block"><img src="assets/img/location.svg" alt="location" class="location-img"> Location: Russia, Syktyvkar</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link nav-link-moved"><img src="assets/img/contacts.svg" alt="contacts" class="nav-img nav-contacts-img odd-img"><span class="nav-text">Contacts</span></a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link nav-link-unmoved"><img src="assets/img/summary.svg" alt="summary" class="nav-img nav-summary-img even-img"><span class="nav-text">Summary</span></a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link nav-link-moved"><img src="assets/img/skills.svg" alt="skills" class="nav-img nav-skills-img odd-img"><span class="nav-text">Skills</span></a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link nav-link-unmoved"><img src="assets/img/education.svg" alt="education" class="nav-img nav-education-img even-img"><span class="nav-text">Education</span></a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link nav-link-moved"><img src="assets/img/languages.svg" alt="languages" class="nav-img nav-languages-img odd-img"><span class="nav-text">Languages</span></a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link nav-link-unmoved"><img src="assets/img/projects.svg" alt="projects" class="nav-img nav-projects-img even-img"><span class="nav-text">Projects</span></a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link nav-link-moved"><img src="assets/img/code.svg" alt="code" class="nav-img nav-code-img odd-img"><span class="nav-text">Code</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="sections-about-professional-wrapper">
+                <section class="section-about">
+                    <div class="contacts subsection">
+                        <h2 class="title-of-section" id="contacts">Contacts</h2>
+                        <ul class="main-list">
+                            <li class="main-item"><img src="assets/img/email.svg" alt="email" class="main-icon"><span class="contacts-text">Email: <span class="contacts-text-normal">d.shmuratkin@mail.ru</span></span></li>
+                            <li class="main-item"><img src="assets/img/github.svg" alt="GitHub" class="main-icon"><span class="contacts-text">GitHub: <span class="contacts-text-normal">DialecticalLaw</span></span></li>
+                            <li class="main-item"><img src="assets/img/discord.svg" alt="Discord" class="main-icon"><span class="contacts-text">Discord: <span class="contacts-text-normal">proxyMC</span></span></li>
+                        </ul>
+                    </div>
+                    <div class="summary subsection">
+                        <h2 class="title-of-section" id="summary">Summary</h2>
+                        <p class="main-text">I started my way in programming only 4 months ago at the time of writing this text. During this time, I have mastered basic knowledge of HTML, CSS and JavaScript and a bit of Git/GitHub. <br> My goal is trivial and converges with the goal of most - it's to get a job in a promising company. If we talk about what distinguishes me from the majority, it's that I see my future without programming quite sad, so I will cling to any opportunity to get closer to my goal.</p>
+                    </div>
+                </section>
+                <section class="section-professional">
+                    <div class="skills subsection">
+                        <h2 class="title-of-section" id="skills">Skills</h2>
+                        <div class="skills-content-wrapper">
+                            <ul class="main-list">
+                                <li class="main-item"><img src="assets/img/git.svg" alt="git" class="main-icon"><span class="skills-text">Git <span class="main-text">basics</span></span></li>
+                                <li class="main-item"><img src="assets/img/html.svg" alt="html" class="main-icon"><span class="skills-text">HTML <span class="main-text">basics</span></span></li>
+                                <li class="main-item"><img src="assets/img/css.svg" alt="css" class="main-icon"><span class="skills-text">CSS <span class="main-text">basics</span></span></li>
+                                <li class="main-item"><img src="assets/img/js.svg" alt="js" class="main-icon"><span class="skills-text">JavaScript <span class="main-text">basics</span></span></li>
+                            </ul>
+                            <img src="assets/img/spot.png" alt="spot" class="spot">
+                        </div>
+                    </div>
+                    <div class="education subsection">
+                        <h2 class="title-of-section" id="education">Education</h2>
+                        <ul class="education-list">
+                            <li class="main-item colored-list-item"><span class="main-text">Syktyvkar Trade and Economic College</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
+                        </ul>
+                        <a href="https://app.rs.school/certificate/qplzbdwl" class="certificate-link" target="_blank"><img src="assets/img/certificate.svg" alt="certificate" class="certificate-img"></a>
+                    </div>
+                    <div class="languages subsection">
+                        <h2 class="title-of-section" id="languages">Languages</h2>
+                        <ul class="languages-list">
+                            <li class="main-item colored-list-item"><span class="main-text">English - A1 (A2 in progress)</span></li>
+                            <li class="main-item colored-list-item"><span class="main-text">RS School Course "JavaScript/Front-end. Stage 0"</span></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <section class="section-projects">
+                <h2 class="title-of-section" id="projects">Projects</h2>
+                <div class="projects-block-list">
+                    <a href="https://dialecticallaw.github.io/first-training-projects/library/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-library">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Web page for the library</div>
+                            </div>
+                        </div>
+                        <p class="main-text">- Library -</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/random-game/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-2048">
+                            <div class="project-description-block">
+                                <div class="project-description-text">2048 - numerical puzzle, combine tiles, reach 2048</div>
+                            </div>
+                        </div>
+                        <p class="main-text">- 2048 -</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/audio-player/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-audio-player">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Simple audio player. Relax while listening to music</div>
+                            </div>
+                        </div>
+                        <p class="main-text">- Audio player -</p>
+                    </a>
+                    <a href="https://dialecticallaw.github.io/first-training-projects/image-galery/" class="project-link-wrapper" target="_blank">
+                        <div class="project-img img-image-gallery">
+                            <div class="project-description-block">
+                                <div class="project-description-text">Get the images you need by search query</div>
+                            </div>
+                        </div>
+                        <p class="main-text">- Image gallery -</p>
+                    </a>
+                </div>
+            </section>
+            <section class="section-code">
+                <h2 class="title-of-section" id="code">Code</h2>
+                <div class="kata-block">
+                    <div class="code-block">
+                        <code class="code-example">
+                            <img src="assets/img/js.svg" alt="js" class="js-img">
+                            <span class="code-blue">function</span> <span class="code-light-yellow">bingo</span><span class="code-yellow">(</span><span class="code-aqua">ticket</span>, <span class="code-aqua">win</span><span class="code-yellow">) {</span><br>
+                            &emsp;<span class="code-blue">let</span> <span class="code-aqua">miniWins</span> = <span class="code-green">0</span>;<br>
+                            &emsp;<span class="code-purple">for (</span><span class="code-blue">let</span> <span class="code-aqua">subTicket</span> <span class="code-blue">of</span> <span class="code-aqua">ticket</span><span class="code-purple">) {</span><br>
+                            &emsp;&emsp;<span class="code-purple">for</span> <span class="code-blue">(let</span> <span class="code-aqua">i</span> = <span class="code-green">0</span>; <span class="code-aqua">i</span> &lt; <span class="code-aqua">subTicket</span><span class="code-yellow">[</span><span class="code-green">0</span><span class="code-yellow">]</span>.<span class="code-aqua">length</span>; <span class="code-aqua">i</span>++<span class="code-blue">) {</span><br>
+                            &emsp;&emsp;&emsp;<span class="code-purple">if</span> <span class="code-yellow">(</span><span class="code-aqua">subTicket</span><span class="code-purple">[</span><span class="code-green">0</span><span class="code-purple">]</span>.<span class="code-light-yellow">charCodeAt</span><span class="code-purple">(</span><span class="code-aqua">i</span><span class="code-purple">)</span> === <span class="code-aqua">subTicket</span><span class="code-purple">[</span><span class="code-green">1</span><span class="code-purple">]</span><span class="code-yellow">) {</span><br>
+                            &emsp;&emsp;&emsp;&emsp;<span class="code-aqua">miniWins</span> += <span class="code-green">1</span>;<br>
+                            &emsp;&emsp;&emsp;&emsp;<span class="code-purple">break</span>;<br>
+                            &emsp;&emsp;&emsp;<span class="code-yellow">}</span><br>
+                            &emsp;&emsp;<span class="code-blue">}</span><br>
+                            &emsp;<span class="code-purple">}</span><br>
+                            &emsp;<span class="code-purple">return</span> <span class="code-aqua">miniWins</span> &gt;= <span class="code-aqua">win</span> ? <span class="code-brown">'Winner!'</span> : <span class="code-brown">'Loser!'</span>;<br>
+                            <span class="code-yellow">}</span>
+                        </code>
+                        <div class="falling-syntax"></div>
+                    </div>
+                    <div class="kata-description">
+                            <a href="https://www.codewars.com/kata/57f625992f4d53c24200070e" target="_blank" class="lottery-title">Lottery Ticket <img src="assets/img/link.svg" alt="link" class="link-kata-img"></a>
+                            <p class="main-text">Given a lottery ticket (ticket), represented by an array of 2-value arrays, you must find out if you've won the jackpot. To do this, you must first count the 'mini-wins' on your ticket. Each subarray has both a string and a number within it. If the character code of any of the characters in the string matches the number, you get a mini win. Note you can only have one mini win per sub array. Once you have counted all of your mini wins, compare that number to the other input provided (win). If your total is more than or equal to (win), return 'Winner!'. Else return 'Loser!'.</p>
+                            <img src="assets/img/spot2.png" alt="spot" class="spot2">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="https://github.com/DialecticalLaw" class="gh-name" target="_blank"><img src="assets/img/github.svg" alt="github" class="gh-icon">DialecticalLaw</a>
+            <img src="assets/img/footerImg.png" alt="abstract" class="footer-img">
+            <p class="year">2023</p>
+            <a href="https://rs.school/js-stage0/" class="rss-link" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rss"></a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
