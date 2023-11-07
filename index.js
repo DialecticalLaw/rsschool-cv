@@ -1,6 +1,6 @@
 const fallingSyntax = document.querySelector('.falling-syntax');
 
-const jsSyntax = ['return', 'if', 'else', 'switch', 'for', 'while', 'break', 'case', 'this', 'typeof', 'addEventListener', 'querySelector', 'document', 'function', 'undefined', 'null', 'NaN', 'true', 'false', 'let', 'const', '++', '&ndash;&ndash;', '||', '&amp;&amp;'];
+const jsSyntax = ['return', 'if', 'else', 'switch', 'for', 'while', 'break', 'case', 'this', 'typeof', 'addEventListener', 'querySelector', 'document', 'function', 'undefined', 'null', 'NaN', 'classList', 'new', 'let', 'const', '++', '&ndash;&ndash;', '||', '&amp;&amp;'];
 
 setInterval(() => {
     showDepartingElements()
